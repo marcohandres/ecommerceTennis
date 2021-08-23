@@ -599,6 +599,11 @@ img{
     color: var(--dark-color-light);
 }
 /* ===== MEDIA QUERIES=====*/
+@media screen and (max-width: 576px){
+    .slider-item img{
+        margin-top: calc(var(--header-height));
+    }
+}
 @media screen and (min-width: 576px){
     .collection-container{
         grid-template-columns: 415px;
