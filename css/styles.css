@@ -125,7 +125,6 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    /* background-color: var(--dark-color-lighten); */
     background-color: #E6E6E6;
 }
 
@@ -241,12 +240,6 @@ img{
     background-color: #F5F5F5;
 }
 .slider-item img{
-    /* width: 100%;
-    max-height: 100vh;
-    height: inherit;
-    object-fit: conver;
-    vertical-align: top;
-    transition: 2s; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -621,6 +614,9 @@ img{
     }
     .new-mens{
         align-items: center;
+    }
+    .slider-item img{
+        margin-top: calc(var(--header-height));
     }
 }
 
