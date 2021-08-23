@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
+    <title>Ecommerce - Marco Andrés</title>
     <!-- ==== CSS === -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- ==== BOX ICONS === -->
@@ -24,21 +24,24 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link"> Inicio </a>
+                        <a href="#featured" class="nav-link"> Nuevos lanzamientos </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#featured" class="nav-link"> Destacado </a>
+                        <a href="#men" class="nav-link"> Hombre </a>
                     </li>
                     <li class="nav-item">
                         <a href="#women" class="nav-link"> Mujer </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#new" class="nav-link"> Nuevo </a>
+                        <a href="#offert" class="nav-link"> Ofertas </a>
                     </li>
                     <li class="nav-item">
-                        <a href="./shop.html" class="nav-link"> Tienda </a>
+                        <a href="./shop.html" class="nav-link"> Todo </a>
                     </li>
                 </ul>
+            </div>
+            <div class="nav-shop">
+                <i class='bx bx-heart'></i>
             </div>
             <div class="nav-shop">
                 <i class='bx bx-shopping-bag'></i>
@@ -46,10 +49,9 @@
         </nav>
     </div>
 
-
     <main class="l-main">
         <!--===== HOME =====-->
-        <section class="home" id="home">
+        <!-- <section class="home">
             <div class="home-container bd-grid">
                 <div class="home-sneaker">
                     <div class="home-shape">
@@ -64,41 +66,78 @@
                     <a href="#" class="button">Explorar</a>
                 </div>
             </div>
+           
+        </section> -->
+
+        <section class="slider-container">
+           
+            <div class="slider-item fade">
+                <picture>
+                    <img srcset="/img/adidas-logo.jpg 576w,
+                    /img/adidas1.jpg 768w" src="./img/adidas1.jpg" alt="banner 1">
+                </picture>
+               
+            </div>
+            <div class="slider-item fade">
+                <img srcset="/img/nike-v.png 576w,
+                             /img/nike2.jpg 768w" src="./img/nike2.jpg" alt="banner 1">
+            </div>
+            <div class="slider-item fade">
+                <img srcset="/img/nike-logo.jpg 576w,
+                             /img/nike4.jpg 768w" src="./img/nike4.jpg" alt="banner 1">
+            </div>
+            
+            
+            <div class="slider-item fade">
+                <img srcset="/img/adidas4.jpg 576w,
+                             /img/adidas2.jpg 768w" src="./img/adidas2.jpg" alt="banner 1">
+            </div>
+            
+            
+            
+            <div class="directions">
+                <i class='bx bxs-left-arrow' id="prev" ></i>
+                <i class='bx bxs-right-arrow' id="next"></i>
+            </div>
+            <div class="bars">
+                <span class="bar active"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </section>
 
         <!--===== FEATURED =====-->
         <section class="featured section" id="featured">
-            <h2 class="section-title">Destacado</h2>
+            <h2 class="section-title">Nuevos lanzamientos</h2>
             <div class="featured-container bd-grid">
 
                 <article class="sneaker">
                     <div class="sneaker-sale">Nuevo</div>
-                    <img src="./img/featured1.png" alt="sneaker en venta 1" class="sneaker-img">
-                    <span class="sneaker-name">Nike Jordan</span>
-                    <span class="sneaker-price">$149.99</span>
+                    <img src="./img/newAirMax2021_adobespark.png" alt="sneaker en venta 1" class="sneaker-img">
+                    <span class="sneaker-name"> Nike Air Max 2021</span>
+                    <span class="sneaker-price">$3,599</span>
                     <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                 </article>
 
                 <article class="sneaker">
                     <div class="sneaker-sale">Nuevo</div>
-                    <img src="./img/featured2.png" alt="sneaker en venta 1" class="sneaker-img">
-                    <span class="sneaker-name">Nike Free RN</span>
-                    <span class="sneaker-price">$149.99</span>
+                    <img src="./img/zoomSpan3_adobespark.png" alt="sneaker en venta 1" class="sneaker-img">
+                    <span class="sneaker-name">Nike Zoom Span 3</span>
+                    <span class="sneaker-price">$1,849</span>
                     <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                 </article>
 
                 <article class="sneaker">
                     <div class="sneaker-sale">Nuevo</div>
-                    <img src="./img/featured3.png" alt="sneaker en venta 1" class="sneaker-img">
-                    <span class="sneaker-name">Nike Free RN</span>
-                    <span class="sneaker-price">$149.99</span>
+                    <img src="./img/blazer_adobespark.png" alt="sneaker en venta 1" class="sneaker-img">
+                    <span class="sneaker-name">Nike Blazer Mid '77</span>
+                    <span class="sneaker-price">$2,399</span>
                     <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                 </article>
             </div>
-        </section>
-
-        <!--===== COLLECTION =====-->
-        <section class="collection section">
+            <!--===== COLLECTION =====-->
+        <div class="collection section">
             <div class="collection-container bd-grid">
 
                 <div class="collection-card">
@@ -106,10 +145,10 @@
                         <h3 class="collection-name">
                             Nike
                         </h3>
-                        <p class="collection-description">Nueva colección 2021</p>
-                        <a href="#" class="button-light">Comprar <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                        <p class="collection-description"> Colección</p>
+                        <a href="#" class="button-light">Ver <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                     </div>
-                    <img src="./img/collection1.png" alt="Colleccion 1, 2021" class="collection-img">
+                    <img src="./img/nikeCol_adobespark.png" alt="Colleccion 1, 2021" class="collection-img">
                 </div>
 
                 <div class="collection-card">
@@ -117,41 +156,131 @@
                         <h3 class="collection-name">
                             Adidas
                         </h3>
-                        <p class="collection-description">Nueva colección 2021</p>
-                        <a href="#" class="button-light">Comprar <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                        <p class="collection-description">colección</p>
+                        <a href="#" class="button-light">Ver <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                     </div>
                     <img src="./img/collection2.png" alt="Colleccion 1, 2021" class="collection-img">
                 </div>
 
             </div>
+        </div>
         </section>
 
+        
+
+         <!--===== MEN SNEAKERS =====-->
+          <!-- <section class="women section" id="men">
+            <h2 class="section-title">Hombre</h2>
+            
+        </section>  -->
+
+        <section class="new section" id="men">
+            <h2 class="section-title">Hombre</h2>
+
+            <div class="women-container bd-grid" style="margin-bottom: 20px">
+
+                <article class="sneaker">
+
+                    <img src="./img/zoomSpan3_adobespark.png" alt="sneaker de mujer" class="sneaker-img">
+                    <span class="sneaker-name"> Zoom Span 3</span>
+                    <span class="sneaker-price">$1,849</span>
+                    <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </article>
+
+                <article class="sneaker">
+
+                    <img src="./img/blazer_adobespark.png" alt="sneaker de mujer" class="sneaker-img">
+                    <span class="sneaker-name"> Blazer Mid '77</span>
+                    <span class="sneaker-price">$2,399</span>
+                    <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </article>
+
+                <article class="sneaker">
+
+                    <img src="./img/airmax95_adobespark.png" alt="sneaker de mujer" class="sneaker-img">
+                    <span class="sneaker-name"> Air Max 95</span>
+                    <span class="sneaker-price">$3,499</span>
+                    <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </article>
+
+                <article class="sneaker">
+
+                    <img src="./img/airMasSC_adobespark.png" alt="sneaker de mujer" class="sneaker-img">
+                    <span class="sneaker-name"> Air Max SC</span>
+                    <span class="sneaker-price">$1,699</span>
+                    <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </article>
+
+            </div>
+
+            <div class="new-container bd-grid">
+                <div class="new-mens">
+                    <img src="./img/new1.png" alt="Producto nuevo" class="new-mens-img">
+                    <h3 class="new-title">Nueva Colección</h3>
+                    <span class="new-price">$3,499</span>
+                    <a href="#" class="button-light">Ver Colección <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </div>
+
+                <div class="new-sneaker">
+
+                    <div class="new-sneaker-card">
+                        <img src="./img/new2.png" alt="Poducto nuevo" class="new-sneaker-img">
+                        <div class="new-sneaker-overlay">
+                            <a href="#" class="button">Agragar</a>
+                        </div>
+                    </div>
+
+                    <div class="new-sneaker-card">
+                        <img src="./img/new3.png" alt="Poducto nuevo" class="new-sneaker-img">
+                        <div class="new-sneaker-overlay">
+                            <a href="#" class="button">Agragar</a>
+                        </div>
+                    </div>
+
+                    <div class="new-sneaker-card">
+                        <img src="./img/new4.png" alt="Poducto nuevo" class="new-sneaker-img">
+                        <div class="new-sneaker-overlay">
+                            <a href="#" class="button">Agragar</a>
+                        </div>
+                    </div>
+
+                    <div class="new-sneaker-card">
+                        <img src="./img/new5.png" alt="Poducto nuevo" class="new-sneaker-img">
+                        <div class="new-sneaker-overlay">
+                            <a href="#" class="button">Agragar</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
         <!--===== WOMEN SNEAKERS =====-->
-        <section class="women section" id="women">
+        <section class="new section" id="women">
             <h2 class="section-title">Mujer</h2>
-            <div class="women-container bd-grid">
+
+            <div class="women-container bd-grid" style="margin-bottom: 20px">
 
                 <article class="sneaker">
 
                     <img src="./img/women1.png" alt="sneaker de mujer" class="sneaker-img">
-                    <span class="sneaker-name">Nike Free TR</span>
-                    <span class="sneaker-price">$129.99</span>
+                    <span class="sneaker-name"> Air Max 2021</span>
+                    <span class="sneaker-price">$3,599</span>
                     <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                 </article>
 
                 <article class="sneaker">
 
                     <img src="./img/women2.png" alt="sneaker de mujer" class="sneaker-img">
-                    <span class="sneaker-name">Nike Free TR</span>
-                    <span class="sneaker-price">$129.99</span>
+                    <span class="sneaker-name">Air Force 1 </span>
+                    <span class="sneaker-price">$2,799</span>
                     <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                 </article>
 
                 <article class="sneaker">
 
                     <img src="./img/women3.png" alt="sneaker de mujer" class="sneaker-img">
-                    <span class="sneaker-name">Nike Free TR</span>
-                    <span class="sneaker-price">$129.99</span>
+                    <span class="sneaker-name">Air Max Koko</span>
+                    <span class="sneaker-price">$2,199</span>
                     <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                 </article>
 
@@ -159,27 +288,118 @@
 
                     <img src="./img/women4.png" alt="sneaker de mujer" class="sneaker-img">
                     <span class="sneaker-name">Nike Free TR</span>
-                    <span class="sneaker-price">$129.99</span>
+                    <span class="sneaker-price">$2,199</span>
                     <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
                 </article>
 
             </div>
+
+            <div class="new-container bd-grid">
+                <div class="new-mens">
+                    <img src="./img/new1.png" alt="Producto nuevo" class="new-mens-img">
+                    <h3 class="new-title">Nueva Colección</h3>
+                    <span class="new-price">$3,499</span>
+                    <a href="#" class="button-light">Ver Colección <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </div>
+
+                <div class="new-sneaker">
+
+                    <div class="new-sneaker-card">
+                        <img src="./img/new2.png" alt="Poducto nuevo" class="new-sneaker-img">
+                        <div class="new-sneaker-overlay">
+                            <a href="#" class="button">Agragar</a>
+                        </div>
+                    </div>
+
+                    <div class="new-sneaker-card">
+                        <img src="./img/new3.png" alt="Poducto nuevo" class="new-sneaker-img">
+                        <div class="new-sneaker-overlay">
+                            <a href="#" class="button">Agragar</a>
+                        </div>
+                    </div>
+
+                    <div class="new-sneaker-card">
+                        <img src="./img/new4.png" alt="Poducto nuevo" class="new-sneaker-img">
+                        <div class="new-sneaker-overlay">
+                            <a href="#" class="button">Agragar</a>
+                        </div>
+                    </div>
+
+                    <div class="new-sneaker-card">
+                        <img src="./img/new5.png" alt="Poducto nuevo" class="new-sneaker-img">
+                        <div class="new-sneaker-overlay">
+                            <a href="#" class="button">Agragar</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <!--===== OFFER =====-->
-        <section class="offer section">
+        <!--=====NEW COLLECTION=====-->
+         <section class="women section" id="offert">
+            <h2 class="section-title">Ofertas</h2>
+            <div class="women-container bd-grid">
+
+                <article class="sneaker">
+
+                    <img src="./img/women1.png" alt="sneaker de mujer" class="sneaker-img">
+                    <span class="sneaker-name">Nike Free TR</span>
+                    <div class="sneaker-content-price">
+                        <span class="sneaker-price">$1610</span>
+                        <span class="sneaker-price-offer">$1999</span>
+                    </div>
+                    <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </article>
+
+                <article class="sneaker">
+
+                    <img src="./img/featured2.png" alt="sneaker de mujer" class="sneaker-img">
+                    <span class="sneaker-name">Nike Free Run</span>
+                    <div class="sneaker-content-price">
+                        <span class="sneaker-price">$2,099</span>
+                        <span class="sneaker-price-offer">$2,399</span>
+                    </div>
+                    <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </article>
+
+                <article class="sneaker">
+
+                    <img src="./img/airmax_adobespark.png" alt="sneaker de mujer" class="sneaker-img">
+                    <span class="sneaker-name">Nike Air Max</span>
+                    <div class="sneaker-content-price">
+                        <span class="sneaker-price">$1,610</span>
+                        <span class="sneaker-price-offer">$1,999</span>
+                    </div>
+                    <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </article>
+
+                <article class="sneaker">
+
+                    <img src="./img/women2.png" alt="sneaker de mujer" class="sneaker-img">
+                    <span class="sneaker-name"> Air Max SC</span>
+                    <div class="sneaker-content-price">
+                        <span class="sneaker-price">$2,399</span>
+                        <span class="sneaker-price-offer">$2,539</span>
+                    </div>
+                    <a href="#" class="button-light">Añadir <i class='bx bx-right-arrow-alt button-icon'></i> </a>
+                </article>
+
+            </div>
+            <section class="offer section">
             <div class="offer-container bd-grid">
                 <div class="offer-data">
-                    <h3 class="offer-title">50% de descuento</h3>
-                    <p class="offer-description">En tennis Adidas</p>
+                    <h3 class="offer-title">10% de descuento</h3>
+                    <p class="offer-description">En la marca Adidas</p>
                     <a href="#" class="button">Comprar ahora</a>
                 </div>
-                <img src="./img/offert.png" alt="oferta del día" class="offer-img">
+                <img src="./img/pansAdidas_adobespark.png" alt="oferta del día" class="offer-img">
             </div>
            
         </section>
-        <!--=====NEW COLLECTION=====-->
-        <section class="new section" id="new">
+        </section>
+        <!-- <section class="new section" id="new">
             <h2 class="section-title">Nueva Colección</h2>
 
             <div class="new-container bd-grid">
@@ -222,14 +442,14 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!--===== NEWSLETTER =====-->
         <div class="newsletter section">
             <div class="newsletter-container bg-grid">
                 <div>
-                    <h3 class="newsletter-title">Suscribete y optén 10% de descuento</h3>
-                    <p class="newsletter-description">Optén 10% de descuento en todos los productos</p>
+                    <h3 class="newsletter-title">Suscribete y obtén 7% de descuento</h3>
+                    <p class="newsletter-description">Obtén 7% de descuento en todos los productos</p>
                 </div>
                 <form action="#" class="newsletter-subscribe">
                     <input type="email" placeholder="ejemplo@gmail.com" class="newsletter-input" name="#">
@@ -245,17 +465,17 @@
     <footer class="footer section">
         <div class="fotter-container bg-grid">
             <div class="footer-box">
-                <h3 class="footer-title">Marco Andrés</h3>
+                <h3 class="footer-title"><a href="./index.html">Marco Andrés</a></h3>
                 <p class="footer-description">Nueva collecion de tennis 2021.</p>
             </div>
             <div class="footer-box">
                 <h3 class="footer-title">Explorar</h3>
                 <ul>
-                    <li><a href="./index.html" class="footer-link" >Inicio</a></li>
-                    <li><a href="#featured" class="footer-link" >Destacado</a></li>
+                    <li><a href="#featured" class="footer-link" >Nuevos lanzamientos</a></li>
+                    <li><a href="#men" class="footer-link" >Hombre</a></li>
                     <li><a href="#women" class="footer-link" >Mujer</a></li>
-                    <li><a href="#new" class="footer-link" >Nuevo</a></li>
-                    <li><a href="./shop.html" class="footer-link" >Tienda</a></li>
+                    <li><a href="#offert" class="footer-link" >Ofertas</a></li>
+                    <li><a href="./shop.html" class="footer-link" >Todo</a></li>
                 </ul>
             </div>
             <div class="footer-box">
@@ -274,7 +494,7 @@
                 <a href="#" class="footer-social">  <i class='bx bxl-instagram-alt' ></i> </a>    
             </div>
         </div>
-        <p class="footer-copy"> &copy; 2021. Todos los derechos reservados.</p>
+        <p class="footer-copy"> &copy; <script> var d = new Date();  document.write( d.getFullYear() ) </script> . Todos los derechos reservados.</p>
     </footer>
 
     <!--===== MAIN JS =====-->

@@ -53,3 +53,63 @@ window.onscroll = ()=>{
         header.classList.remove('scroll-header')
     }
 }
+
+
+/* main */
+let index = 1;
+showSlide(index);
+
+setInterval(function time(){
+    showSlide(index+=1);
+}, 4000);
+
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
+
+prev.addEventListener("click", function(){
+    positionSlide(-1);
+} );
+
+next.addEventListener("click", function(){
+    positionSlide(1);
+} );
+
+let bars = document.querySelectorAll('.bar');
+
+for(let i=0; i<bars.length; i++){
+    bars[i].addEventListener("click", function(){
+        barSlider( i+1 );
+    });
+}
+
+function positionSlide(n){
+    showSlide(index+=n);
+}
+
+function barSlider(n){
+    showSlide(index=n);
+}
+
+function showSlide(n){
+    let sliders = document.querySelectorAll('.slider-item');
+    let bars = document.querySelectorAll('.bar');
+
+    if(n > sliders.length){
+        index = 1;
+    }
+    if( n < 1){
+        index = sliders.length;
+    }
+
+    sliders.forEach(s => {
+        s.style.display = 'none';
+    });
+
+    bars.forEach(b => {
+        b.className = b.className.replace("active", " ");
+    });
+
+    sliders[index-1].style.display = 'block';
+    bars[index-1].className += " active";
+
+}
